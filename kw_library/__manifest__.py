@@ -8,7 +8,7 @@
 
     'category': 'Customization',
     'license': 'OPL-1',
-    'version': '15.0',
+    'version': '15.0.1.0.0',
 
     'depends': [],
     'external_dependencies': {'python':[],},
