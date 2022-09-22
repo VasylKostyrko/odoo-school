@@ -25,7 +25,7 @@
             </form>
         </field>
     </record>
-    <record id="kw_lib_book_act_window" mode="ir.actions.act_window">
+    <record id="kw_lib_book_act_window" model="ir.actions.act_window">
         <field name="name">Book</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">kw.lib.book</field>
