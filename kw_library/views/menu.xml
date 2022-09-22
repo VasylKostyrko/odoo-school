@@ -8,6 +8,5 @@
            name="Catalog" sequence="100"/>
   <menuitem id="kw_lib_settings_main_menu"
          parent="kw_lib_main_menu"
-         groups="group_kw_lib_manager,group_kw_lib_admin"
-         name="Settings" sequence="9999"/>
+         name="Settings" sequence="900"/>
 </odoo>
