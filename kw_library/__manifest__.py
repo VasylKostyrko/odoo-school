@@ -11,7 +11,7 @@
     'version': '15.0.1.0.0',
 
     'depends': [],
-    'external_dependencies': {'python': [],},
+    'external_dependencies': {'python': [], },
 
     'data': ['security/ir.model.access.csv',
              'views/menu.xml',
