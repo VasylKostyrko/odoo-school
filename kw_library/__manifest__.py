@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
 {
     'name': "Library",
     'summary': "",
 
-    'author': "Василь Костирко",
+    'author': "Vasyl Kostyrko",
     'website': "https://letu.lviv.ua",
 
     'category': 'Education',

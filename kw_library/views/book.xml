@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
 <odoo>
     <record id="kw_lib_book_tree" model="ir.ui.view">
         <field name="name">kw.lib.book.tree ()</field>
@@ -37,3 +37,4 @@
            parent="kw_lib_catalog_menu"
            name="Book" sequence="200"/>
 </odoo>
+
