@@ -9,13 +9,16 @@
     'license': 'OPL-1',
     'version': '15.0.1.0.0',
 
-    'depends': [],
+    'depends': ["web", ],
     'external_dependencies': {'python': [], },
 
     'data': ['security/ir.model.access.csv',
              'views/menu.xml',
              'views/book.xml',
              'views/author.xml',
+             "report/models_reports_templates.xml",
+             # "report/models_report.xml",
+             # "views/models.xml",
              ],
     'demo': [],
     'installable': True,

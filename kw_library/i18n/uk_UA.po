@@ -29,7 +29,7 @@ msgid ""
 "    * Defines templates for VAT on sales and purchases\n"
 "    * Defines tax templates\n"
 "    * Defines fiscal positions for Austrian fiscal legislation\n"
-"    * Defines tax reports U1/U30\n"
+"    * Defines tax report U1/U30\n"
 "\n"
 "    "
 msgstr ""
@@ -2409,7 +2409,7 @@ msgid ""
 "\n"
 "This module holds all extra fields one may need to manage accurately addresses.\n"
 "\n"
-"For example, in legal reports, some countries need to split the street into several fields,\n"
+"For example, in legal report, some countries need to split the street into several fields,\n"
 "with the street name, the house number, and room number.\n"
 "        "
 msgstr ""
@@ -2432,7 +2432,7 @@ msgid ""
 "\n"
 "In some Latinamerica countries, including Argentina and Chile, some accounting transactions like invoices and vendor bills are classified by a document types defined by the government fiscal authorities (In Argentina case AFIP, Chile case SII).\n"
 "\n"
-"This module is intended to be extended by localizations in order to manage these document types and is an essential information that needs to be displayed in the printed reports and that needs to be easily identified, within the set of invoices as well of account moves.\n"
+"This module is intended to be extended by localizations in order to manage these document types and is an essential information that needs to be displayed in the printed report and that needs to be easily identified, within the set of invoices as well of account moves.\n"
 "\n"
 "Each document type have their own rules and sequence number, this last one is integrated with the invoice number and journal sequence in order to be easy for the localization user. In order to support or not this document types a Journal has a new option that lets to use document or not.\n"
 "\n"
@@ -2716,7 +2716,7 @@ msgstr ""
 msgid ""
 "\n"
 "Generate short links with analytics trackers (UTM) to share your pages through marketing campaigns.\n"
-"Those trackers can be used in Google Analytics to track clicks and visitors, or in Odoo reports to analyze the efficiency of those campaigns in terms of lead generation, related revenues (sales orders), recruitment, etc.\n"
+"Those trackers can be used in Google Analytics to track clicks and visitors, or in Odoo report to analyze the efficiency of those campaigns in terms of lead generation, related revenues (sales orders), recruitment, etc.\n"
 "    "
 msgstr ""
 "\n"
@@ -3252,7 +3252,7 @@ msgid ""
 "\n"
 "You can configure several kinds of time off (sickness, paid days, ...) and allocate time off to an employee or department quickly using time off allocation. An employee can also make a request for more days off by making a new time off allocation. It will increase the total of available days for that time off type (if the request is accepted).\n"
 "\n"
-"You can keep track of time off in different ways by following reports:\n"
+"You can keep track of time off in different ways by following report:\n"
 "\n"
 "* Time Off Summary\n"
 "* Time Off by Department\n"
@@ -4019,7 +4019,7 @@ msgid ""
 "    * Defines templates for sale and purchase VAT\n"
 "    * Defines tax templates\n"
 "    * Defines fiscal positions for spanish fiscal legislation\n"
-"    * Defines tax reports mod 111, 115 and 303\n"
+"    * Defines tax report mod 111, 115 and 303\n"
 msgstr ""
 "\n"
 "Іспанські плани рахунків (PGCE 2008).\n"
@@ -7166,8 +7166,8 @@ msgid ""
 "This schema is made for the most common Companies and therefore suitable\n"
 "to be used for almost every Company.\n"
 "\n"
-"The VAT accounts are linked promptly to generate the required reports. Examples\n"
-"of this reports intercommunitaire transactions.\n"
+"The VAT accounts are linked promptly to generate the required report. Examples\n"
+"of this report intercommunitaire transactions.\n"
 "\n"
 "After installation of this module the configuration will be activated.\n"
 "Select the Chart of Accounts named \"Netherlands - Accounting\".\n"
@@ -8228,7 +8228,7 @@ msgstr ""
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_report_paperformat__report_ids
-msgid "Associated reports"
+msgid "Associated report"
 msgstr "Пов’язані звіти"
 
 #. module: base
@@ -9335,7 +9335,7 @@ msgstr "Пароль"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_country_form
-msgid "Change the way addresses are displayed in reports"
+msgid "Change the way addresses are displayed in report"
 msgstr "Змініть спосіб відображення адрес у звітах"
 
 #. module: base
@@ -12176,7 +12176,7 @@ msgstr "Витрати"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_report_paperformat__report_ids
-msgid "Explicitly associated reports"
+msgid "Explicitly associated report"
 msgstr "Невірно пов’язані звіти"
 
 #. module: base
@@ -12835,7 +12835,7 @@ msgstr "Їжа"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_company__report_footer
-msgid "Footer text displayed at the bottom of all reports."
+msgid "Footer text displayed at the bottom of all report."
 msgstr "Нижній колонтитул відображається в кінці кожної сторінки звітів."
 
 #. module: base
@@ -13593,7 +13593,7 @@ msgstr "Відступ заголовку"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_company__company_details
-msgid "Header text displayed at the top of all reports."
+msgid "Header text displayed at the top of all report."
 msgstr "Заголовок тексту відображається зверху всіх звітів."
 
 #. module: base
@@ -15999,7 +15999,7 @@ msgid ""
 "Use the kanban view and customize the steps of your recruitments process;\n"
 "pre-qualification, first interview, second interview, negociaiton, ...\n"
 "\n"
-"Get accurate statistics on your recruitment pipeline. Get reports to compare\n"
+"Get accurate statistics on your recruitment pipeline. Get report to compare\n"
 "the performance of your different investments on external job boards.\n"
 "\n"
 "Streamline Your Recruitment Process\n"
@@ -21262,7 +21262,7 @@ msgid ""
 "\n"
 "Single out the issues that arise in a project in order to have a better focus\n"
 "on resolving them. Integrate customer interaction on every issue and get\n"
-"accurate reports on your team's performance.\n"
+"accurate report on your team's performance.\n"
 "\n"
 msgstr ""
 "Управління проектом\n"
@@ -23336,7 +23336,7 @@ msgstr ""
 
 #. module: base
 #: model_terms:ir.actions.act_window,help:base.res_partner_industry_action
-msgid "Specify industries to classify your contacts and draw up reports."
+msgid "Specify industries to classify your contacts and draw up report."
 msgstr "Укажіть галузі, щоб класифікувати свої контакти та складати звіти."
 
 #. module: base
@@ -24697,7 +24697,7 @@ msgstr ""
 #: model:ir.model.fields,help:base.field_ir_actions_report__attachment
 msgid ""
 "This is the filename of the attachment used to store the printing result. "
-"Keep empty to not save the printed reports. You can use a python expression "
+"Keep empty to not save the printed report. You can use a python expression "
 "with the object and time variables."
 msgstr ""
 "Це ім'я файлу вкладення, яке використовується для збереження результату "
@@ -25830,7 +25830,7 @@ msgstr "Використовуйте це поле, якщо ви хочете �
 msgid ""
 "Use this field if you want to replace the usual way to encode a complete "
 "address. Note that the address_format field is used to modify the way to "
-"display addresses (in reports for example), while this field is used to "
+"display addresses (in report for example), while this field is used to "
 "modify the input form for addresses."
 msgstr ""
 "Використовуйте це поле, якщо ви хочете замінити звичайний спосіб кодування "
