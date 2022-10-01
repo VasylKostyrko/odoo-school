@@ -1,12 +1,12 @@
 <odoo>
     <menuitem id="new_library_root"
-              name="library"
+              name="new_library"
               active="True"
               web_icon="new_library/static/description/icon.png"
               sequence="111"/>
 
     <menuitem id="new_library_book_menu"
-              name="library"
+              name="new_library"
               parent="new_library_root"
               sequence="1"/>
 
