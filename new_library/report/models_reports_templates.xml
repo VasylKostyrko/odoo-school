@@ -1,7 +1,0 @@
-<odoo>
-    <template id="report_book">
-        <t t-call="web.html.container">
-            <h1>Hello, World!</h1>
-        </t>
-    </template>
-</odoo>
