@@ -18,6 +18,8 @@
                     <sheet>
                         <group>
                             <field name="name"/>
+                            <field name="first_name"/>
+                            <field name="last_name"/>
                         </group>
                     </sheet>
                 </form>
