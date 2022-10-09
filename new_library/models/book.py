@@ -5,7 +5,7 @@ _logger = logging.getLogger(__name__)
 
 class Book(models.Model):
     _name = 'new.lib.book'
-    _description = 'Library_Book'
+    # _description = 'Library_Book'
     name = fields.Char()
     isbn = fields.Char()
     book_description= fields.Text()
