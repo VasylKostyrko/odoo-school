@@ -16,7 +16,8 @@
         <field name="arch" type="xml">
             <form string="Book">
                 <header>
-                    <button string="Confirm" name="set_confirm" type="object" class="oe_highlight"/>
+                    <button string="Confirm" name="set_confirm" type="object"
+                            class="oe_highlight"/>
                 </header>
                 <sheet string="Books">
                     <group>
@@ -84,7 +85,8 @@
         <field name="arch" type="xml">
             <form string="Book">
                 <header>
-                    <button string="Confirm" name="set_confirm" type="object" class="oe_highlight"/>
+                    <button string="Confirm" name="set_confirm" type="object"
+                            class="oe_highlight"/>
                 </header>
                 <sheet string="Authors">
                     <group>
@@ -108,6 +110,79 @@
         </field>
     </record>
 
+    <record id="module_5_qweb_author_kanban_view" model="ir.ui.view">
+        <field name="name">author.of.book.kanban</field>
+        <field name="model">author.of.book</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="name"/>
+                <field name="last_name"/>
+                <field name="color"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="o_kanban_card_header_title">
+                                <div>
+                                   <field name="name"/>
+                                   <field name="last_name"/>
+                                </div>
+                            </div>
+
+                            <div class="o_dropdown_kanban dropdown">
+                               <a class="dropdown-toggle btn"
+                                  data-toggle="dropdown" href="#">
+                                   <span class="fa fa-ellipsis-v"
+                                         aria-hidden="true"/>
+                               </a>
+                                <div class="o_kanban_card_manage_setting row mt16">
+                                    <div class="dropdown-menu" role="menu">
+                                        <t t-if="widget.editable">
+                                           <a role="menuitem" type="edit"
+                                              class="dropdown-item">Edit
+                                           </a>
+                                       </t>
+                                       <t t-if="widget.deletable">
+                                           <a role="menuitem"
+                                              type="delete"
+                                              class="dropdown-item">Delete
+                                           </a>
+                                       </t>
+                                       <ul class="oe_kanban_colorpicker"
+                                           data-field="color"/>
+                                    </div>
+                                </div>
+                           </div>
+
+                            <div class="col-xs-12" style="height: 15px;"/>
+
+                            <div class="container o_kanban_card_content">
+                                <div class="row">
+                                    <div class="col-6 o_kanban_primary_left">
+                                        <button class="btn btn-primary"
+                                                string="Confirm"
+                                                name="set_confirm"
+                                                type="object">
+                                            <span>Confirm</span>
+                                        </button>
+                                    </div>
+                                    <div class="col-6 o_kanban_primary_right">
+                                        <field name="book_ids"
+                                               widget="many2many_tags"/>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </t>
+                </templates>
+            </kanban>
+
+        </field>
+    </record>
+
     <record id="module_5_qwebauthor_tree_view" model="ir.ui.view">
         <field name="name">author.of.book.list</field>
         <field name="model">author.of.book</field>
@@ -123,7 +198,7 @@
     <record id="module_5_qwebauthor_action" model="ir.actions.act_window">
         <field name="name">Authors</field>
         <field name="res_model">author.of.book</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">tree,form,kanban</field>
     </record>
 
     <record id="module_5_qwebaction_author_tree"

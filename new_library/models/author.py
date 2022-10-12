@@ -5,8 +5,9 @@ _logger = logging.getLogger(__name__)
 
 class Author(models.Model):
     _name = 'new.lib.author'
-    # _description = 'Author_of_Book'
+    _description = 'Author'
     name = fields.Char()
     first_name = fields.Char()
     last_name = fields.Char()
-    active = fields.Boolean(default=True, )
+    about = fields.Text(translate=True,)
+    active = fields.Boolean(default=True,)

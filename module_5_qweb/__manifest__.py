@@ -7,14 +7,14 @@
     "category": "Education",
     "version": "15.0.1.0.0",
     "depends": [
-        "web",
+        "web", "point_of_sale",
     ],
     "qweb": [],
     "data": [
         "security/ir.model.access.csv",
         "data/data.xml",
-        # "report/models_reports_templates.xml",
-        # "report/models_report.xml",
+        "report/models_reports_templates.xml",
+        "report/models_report.xml",
         "views/models_views.xml",
     ],
 }

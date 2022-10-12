@@ -20,6 +20,7 @@
                             <field name="name"/>
                             <field name="first_name"/>
                             <field name="last_name"/>
+                            <field name="about"/>
                         </group>
                     </sheet>
                 </form>

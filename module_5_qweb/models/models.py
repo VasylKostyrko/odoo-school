@@ -45,6 +45,11 @@ class AuthorOfBook(models.Model):
         comodel_name='library.book',
         inverse_name='author_id',
         string=_('Books'), )
+    color = fields.Integer('Color')
 
     def set_confirm(self):
         pass
+
+    def get_full_name(self):
+        self.ensure_one()
+        return f'{self.name} {self.last_name}'
