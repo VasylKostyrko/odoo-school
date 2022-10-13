@@ -6,6 +6,7 @@
     "author": "BJet",
     "category": "Education",
     "version": "15.0.1.0.0",
+    "license": "OPL-1",
     "depends": [
         "web", "point_of_sale",
     ],

@@ -8,8 +8,9 @@ class Book(models.Model):
     _description = 'Book'
     name = fields.Char()
     isbn = fields.Char()
-    bibl_num = fields.Char()
-    description= fields.Text()
+    lib_num = fields.Char()
+    description = fields.Text()
     active = fields.Boolean(default=True,)
     author_ids = fields.Many2many(
-        comodel_name='new.lib.author', )
+        comodel_name='new.lib.author',
+        ondelete='cascade',)

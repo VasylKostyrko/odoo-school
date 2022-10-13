@@ -17,7 +17,7 @@
         'views/book.xml',
         'views/author.xml',
     ],
-    'demo': [],
+    'demo': ['data/demo.xml',],
     'installable': True,
     'auto_install': False,
     'images': [
