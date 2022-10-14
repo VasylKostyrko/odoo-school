@@ -1,131 +1,91 @@
 <odoo>
-
-    <template id="logo_template">
-        <div>
-            <div class="col-6">
-                <img t-att-src="image_data_uri(user.company_id.logo)"
-                     alt="Logo"/>
-            </div>
-        </div>
-    </template>
-
-    <template id="print_date_time">
-        <div name="m_5_datetime" style="text-align:right;">
-            <strong>
-                <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%Y-%m-%d %H:%M')"/>
-            </strong>
-        </div>
-    </template>
-
-    <template id="content_book">
-        <div style="text-align: center;">
-            <t t-set="title">
-                <li>Author :</li>
-            </t>
-            <strong>
-                <div t-out="title"/>
-            </strong>
-            <span t-esc="doc.author_id.get_full_name()"/>
-            <br/>
-            ------------------------------------------------------
-            <br/>
-            <t t-set="title">
-                <li>Description :</li>
-            </t>
-            <strong>
-                <div t-out="title"/>
-            </strong>
-            <div t-field="doc.book_description"/>
-        </div>
-        <br/>
-        <div>
-            <table class="table-bordered"
-                   style="border: 1px solid black;"
-                   width="100%">
-                <tr>
-                    <th style="border: 1px solid black;">
-                        <t>All author books:</t>
-                    </th>
-                    <t t-foreach="doc.author_id.book_ids"
-                       t-as="book">
-                        <th style="border: 1px solid black;">
-                            <div t-field="book.name"
-                                 t-attf-style="background-color:yellow"/>
-                        </th>
-                    </t>
-                </tr>
-            </table>
-        </div>
-    </template>
-
-    <template id="print_date_time_2" name="Print Date Time"
-              inherit_id="module_5_qweb.print_date_time">
-        <xpath expr="//div[@name='m_5_datetime']" position="inside">
-            <strong>
-                <span>- create datetime</span>
-            </strong>
-        </xpath>
-    </template>
-
     <template id="report_book">
         <t t-call="web.html_container">
-            <t t-foreach="docs" t-as="doc">
-                <t t-call="module_5_qweb.logo_template"/>
-                <t t-call="module_5_qweb.content_book"/>
-                <br/>
-                <t t-call="module_5_qweb.print_date_time"/>
-            </t>
+            <t t-call="new_library.report_book_template"/>
         </t>
     </template>
-
-    <template id="report_author">
-        <t t-call="web.html_container">
-            <t t-foreach="docs" t-as="doc">
-                <t t-call="module_5_qweb.report_author_body"/>
-            </t>
-        </t>
-    </template>
-
-    <template id="report_author_body">
-        <t t-call="web.external_layout">
-            <strong>Author full name:</strong>
-            <span t-esc="doc.get_full_name()"/>
-            <br/>
-            <br/>
-            <strong>Biography :</strong>
-            <div t-field="doc.biography_text"/>
-            <br/>
-            <br/>
-            <strong>Author`s books :</strong>
-            <div>
-                <table class="table-bordered"
-                       style="border: 1px solid black;"
-                       width="100%">
-                    <thead style="display: table-row-group">
-                        <tr>
-                            <th name="th_name" class="text-left">Name</th>
-                            <th name="th_description" class="text-left">
-                                Description
-                            </th>
-                        </tr>
-                    </thead>
-                    <tbody class="sale_tbody">
-                        <t t-foreach="doc.book_ids"
-                           t-as="book">
-                            <tr>
-                                <td name="td_name" class="text-center">
-                                    <span t-field="book.name"/>
-                                </td>
-                                <td name="td_description" class="text-right">
-                                    <span t-field="book.book_description"/>
-                                </td>
-                            </tr>
-                        </t>
-                    </tbody>
-                </table>
-            </div>
-            <t t-call="module_5_qweb.print_date_time_2"/>
-        </t>
+    <template id="report_book_template">
+        <h1>Hello World!</h1>
     </template>
 </odoo>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    <template id="report_book_document">-->
+<!--        <t t-call="web.html_container">-->
+<!--            <strong>Books:</strong>-->
+<!--            <div>-->
+
+<!--                <h2 class="mt16">-->
+<!--                    <span t-field="doc.name"/>-->
+<!--                </h2>-->
+
+<!--            </div>-->
+<!--        </t>-->
+<!--    </template>-->
+
+
+<!--    <template id="report_book">-->
+<!--        <t t-call="web.html_container">-->
+<!--            <t t-set="custom" t-value="True"/>-->
+<!--            <t t-foreach="docs" t-as="doc">-->
+<!--                <t t-call="module_5_qweb.report_book_document"/>-->
+<!--            </t>-->
+<!--        </t>-->
+<!--    </template>-->
+
+
+<!--    <template id="report_book">-->
+<!--        <html>-->
+<!--            <head>-->
+<!--                <title>Book Report</title>-->
+<!--            </head>-->
+<!--            <body>-->
+<!--                <div>-->
+<!--                    <main>-->
+<!--                        <h1>This is an HTML block</h1>-->
+<!--                        <h2 class="lead">And this is a subtitle</h2>-->
+<!--                        <t t-if="condition">-->
+<!--                            <p>Test</p>-->
+<!--                        </t>-->
+<!--                        <t t-foreach="[1, 2, 3]" t-as="i">-->
+
+<!--                            <p>-->
+<!--                                <t t-out="i"/>-->
+<!--                            </p>-->
+
+<!--                        </t>-->
+<!--                        <t t-set="foo" t-value="2 + 1"/>-->
+
+<!--                        <t t-out="foo"/>-->
+<!--                    </main>-->
+<!--                </div>-->
+<!--            </body>-->
+<!--        </html>-->
+<!--    </template>-->

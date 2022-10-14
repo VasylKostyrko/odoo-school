@@ -21,6 +21,8 @@
                             <field name="first_name"/>
                             <field name="last_name"/>
                             <field name="about"/>
+                            <field name="birth"/>
+                            <field name="death"/>
                         </group>
                     </sheet>
                 </form>

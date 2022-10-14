@@ -4,6 +4,7 @@
         <field name="name">Кнут Д.</field>
         <field name="first_name">Дональд</field>
         <field name="last_name">Кнут</field>
+        <field name="birth">1938</field>
         <field name="about">
 Американський вчений в області інформатики. Доктор философії, емерит-професор
 Стенфордського університету, викладач та ідеолог програмування, автор низки класичних книг з програмування.
@@ -13,6 +14,7 @@
         <field name="name">Aho A.</field>
         <field name="first_name">Alfred</field>
         <field name="last_name">Aho</field>
+        <field name="birth">1941</field>
         <field name="about">
 Канадський вчений-інформатик, вніс помітний вклад в теорію та практику компіляції мов програмування.
 Тьюрінгівський лауреат. Член НАН США, емерит-професор Колумбійського університету.
@@ -22,6 +24,7 @@
         <field name="name">Хопкрофт Дж.</field>
         <field name="first_name">Джон</field>
         <field name="last_name">Хопкрофт</field>
+        <field name="birth">1939</field>
         <field name="about">
 Американський вчений в області теорії обчислювальних систем, лауреат премії Тьюрінга.
 Член Національної інженерної академії США та Національної академії наук США.
@@ -31,6 +34,7 @@
         <field name="name">Ульман Дж.</field>
         <field name="first_name">Джеффрі</field>
         <field name="last_name">Ульман</field>
+        <field name="birth">1942</field>
         <field name="about">
 Дослідник в галузі інформаційних технологій. Його підручники з компіляторів, теорії обчислень та баз даних
 вважаються стандартом у відповідних дисциплінах. Член Національної інженерної академії США та Національної
@@ -41,6 +45,8 @@
         <field name="name">Йодан Э.</field>
         <field name="first_name">Эдвард</field>
         <field name="last_name">Йодан</field>
+        <field name="birth">1944</field>
+        <field name="death">2016</field>
         <field name="about">
 Американський вчений в області теорії обчислювальних систем, видавець журналу "American Programmer".
         </field>
@@ -49,6 +55,7 @@
     <!-- Модель Book -->
     <record id="design_and_analysis_id" model="new.lib.book">
         <field name="name">Построение и анализ вычислительных алгоритмов</field>
+        <field name="num_item">1</field>
         <field name="description">
 В монографії наводяться результати досліджень з побудови швидких алгоритмів або доведення їх відсутності.
 Розглянуто задачі перегляду, впорядкування масивів даних, множення чисел, множення матриць, алгоритми
@@ -56,8 +63,9 @@
         </field>
 <!--        <field name="author_ids" ref="new_library.hopcroft_john_id"/>-->
     </record>
-     <record id="art_computer_programming_id" model="new.lib.book">
+    <record id="art_computer_programming_id" model="new.lib.book">
         <field name="name">Искусство программирования для ЭВМ</field>
+        <field name="num_item">1</field>
         <field name="description">
 Введено поняття алгоритму та обчислювального процесу. Наведено численні факти з дискретної математики.
 Описано прийоми програмування та ефективного в комп’ютерах представлення інформації зі складною
@@ -65,8 +73,9 @@
         </field>
 <!--        <field name="author_ids" ref="new_library.knuth_donald_id"/>-->
     </record>
-      <record id="program_structure_id" model="new.lib.book">
+    <record id="program_structure_id" model="new.lib.book">
         <field name="name">Структурное проектирование и конструирование программ</field>
+        <field name="num_item">1</field>
         <field name="description">
 На сучасному рівні викладено принципи і методи структурного програмування, які дозволяють створювати
 надійно функціонуючі і добре документовані програми.

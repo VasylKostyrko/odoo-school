@@ -22,7 +22,7 @@
     'auto_install': False,
 
     'images': ['static/description/cover.png',
-               'static/description/icon.png',
+               'static/description/icon1.png',
                ],
 
     'price': 0,

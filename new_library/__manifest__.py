@@ -16,6 +16,8 @@
         'views/menu.xml',
         'views/book.xml',
         'views/author.xml',
+        "report/models_reports_templates.xml",
+        "report/models_report.xml",
     ],
     'demo': ['data/demo.xml',],
     'installable': True,

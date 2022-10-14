@@ -10,4 +10,6 @@ class Author(models.Model):
     first_name = fields.Char()
     last_name = fields.Char()
     about = fields.Text(translate=True,)
+    birth = fields.Char()
+    death = fields.Char()
     active = fields.Boolean(default=True,)
