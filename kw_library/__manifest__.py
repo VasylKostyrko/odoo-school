@@ -15,7 +15,7 @@
     'data': ['security/ir.model.access.csv',
              'views/menu.xml',
              'views/book.xml',
-             'views/autor.xml',
+             'views/author.xml',
              ],
     'demo': [],
     'installable': True,
