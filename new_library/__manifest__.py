@@ -22,7 +22,9 @@
     'demo': ['data/demo.xml',],
     'installable': True,
     'auto_install': False,
+    'auto_install': False,
     'images': [
+               'static/description/books.png',
                'static/description/icon.png',
                ],
     'price': 0,

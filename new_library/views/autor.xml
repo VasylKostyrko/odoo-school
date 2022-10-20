@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<!--<?xml version="1.0" encoding="utf-8"?>-->
 <odoo>
         <record id="new_lib_author_tree" model="ir.ui.view">
             <field name="name">new.lib.author.tree ()</field>
