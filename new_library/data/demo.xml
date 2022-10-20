@@ -1,7 +1,7 @@
 <odoo noupdate="1">
     <!-- Модель  Author -->
     <record id="knuth_donald_id" model="new.lib.author">
-        <field name="name">Кнут Д.</field>
+        <field name="name">Кнут Дональд</field>
         <field name="first_name">Дональд</field>
         <field name="last_name">Кнут</field>
         <field name="birth">1938</field>
