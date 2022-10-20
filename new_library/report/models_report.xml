@@ -35,6 +35,6 @@
 <!--            <field name="report_file">new_library.report_book</field>-->
 <!--            <field name="binding_model_id" ref="new.lib.book"/>-->
 <!--            <field name="binding_type">report</field>-->
-<!--        </record>-->
+        </record>
     </data>
 </odoo>

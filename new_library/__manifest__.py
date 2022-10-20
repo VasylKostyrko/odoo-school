@@ -1,6 +1,6 @@
 {
     "name": "New Library",
-    "summary": "Learning Odoo Qweb",
+    "summary": "Learning Odoo Reports",
 
     "author": "Vasyl Kostyrko",
     'website': "https://letu.lviv.ua",
