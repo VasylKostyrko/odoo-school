@@ -20,8 +20,8 @@
         "report/models_report.xml",
     ],
     'demo': ['data/demo.xml',],
+    # 'data': ['data/data.xml',],
     'installable': True,
-    'auto_install': False,
     'auto_install': False,
     'images': [
                'static/description/books.png',
