@@ -1,22 +1,72 @@
 <odoo>
-    <template id="report_author">
-        <t t-call="web.html_container">
-            <t t-call="new_library.report_author_template"/>
-        </t>
-    </template>
-    <template id="report_author_template">
-        <h1>Привіт, Світ!</h1>
-    </template>
-
     <template id="report_book">
         <t t-call="web.html_container">
-            <t t-call="new_library.report_book_template"/>
+<!--           <t t-call="new_library.report_book_template"/>-->
+            <t t-foreach="docs" t-as="doc">
+                <t t-foreach="doc.author_ids" t-as="id_author">
+                    <span t-esc="id_author.name"/>
+                    <t t-if="id_author_last"/><t t-else="">
+                        ,
+                    </t>
+                </t>
+                <p><span t-esc="doc.name"/></p>
+
+                <t t-if="doc_size == 1">
+                    <p><span t-esc="doc.description"/></p>
+                    <p>
+                        Кількість екземплярів: всього
+                        <span t-esc="doc.num_item"/>, наявно
+                        <span t-esc="doc.num_available"/>
+                    </p>
+                </t>
+                <t t-if="doc_last"/><t t-else="">
+                    <p>--------------------------------------</p>
+                </t>
+            </t>
         </t>
     </template>
-    <template id="report_book_template">
-        <h1>Hello World!</h1>
-    </template>
+<!--    <template id="report_book_template">-->
+<!--        <t t-foreach="docs" t-as="doc">-->
+<!--            <t t-foreach="doc.author_ids" t-as="id_author">-->
+<!--                <span t-esc="id_author.name"/>-->
+<!--                <t t-if="id_author_last"/><t t-else="">-->
+<!--                    ,-->
+<!--                </t>-->
+<!--            </t>-->
+<!--            <p><span t-esc="doc.name"/></p>-->
 
+<!--            <t t-if="doc_size == 1">-->
+<!--                <p><span t-esc="doc.description"/></p>-->
+<!--                <p>-->
+<!--                    Кількість екземплярів: всього-->
+<!--                    <span t-esc="doc.num_item"/>, наявно-->
+<!--                    <span t-esc="doc.num_available"/>-->
+<!--                </p>-->
+<!--            </t>-->
+<!--            <t t-if="doc_last"/><t t-else="">-->
+<!--                <p>&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;</p>-->
+<!--            </t>-->
+<!--        </t>-->
+<!--    </template>-->
+
+    <template id="report_author">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+<!--                <t t-call="new_library.report_author_template"/>-->
+                <p><span t-esc="doc.first_name + ' ' + doc.last_name"/></p>
+                <span t-esc="doc.about"/>
+                <t t-if="doc_last"/>
+                <t t-else="">
+                    <p>--------------------------------------</p>
+                </t>
+            </t>
+        </t>
+    </template>
+<!--    <template id="report_author_template">-->
+<!--        <p><span t-esc="doc.first_name + ' ' + doc.last_name"/></p>-->
+<!--        <span t-esc="doc.about"/>-->
+<!--        <br/>-->
+<!--    </template>                -->
 </odoo>
 
 

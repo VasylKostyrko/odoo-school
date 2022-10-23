@@ -11,9 +11,9 @@
         </field>
     </record>
     <record id="aho_alfred_id" model="new.lib.author">
-        <field name="name">Aho A.</field>
-        <field name="first_name">Alfred</field>
-        <field name="last_name">Aho</field>
+        <field name="name">Ахо А.</field>
+        <field name="first_name">Альфред</field>
+        <field name="last_name">Ахо</field>
         <field name="birth">1941</field>
         <field name="about">
 Канадський вчений-інформатик, вніс помітний вклад в теорію та практику компіляції мов програмування.
@@ -32,7 +32,7 @@
     </record>
     <record id="ullman_jeffrey_id" model="new.lib.author">
         <field name="name">Ульман Дж.</field>
-        <field name="first_name">Джеффрі</field>
+        <field name="first_name">Джеффри</field>
         <field name="last_name">Ульман</field>
         <field name="birth">1942</field>
         <field name="about">
