@@ -52,11 +52,18 @@
     <template id="report_author">
         <t t-call="web.html_container">
             <t t-foreach="docs" t-as="doc">
-<!--                <t t-call="new_library.report_author_template"/>-->
                 <p><span t-esc="doc.first_name + ' ' + doc.last_name"/></p>
                 <span t-esc="doc.about"/>
-                <t t-if="doc_last"/>
-                <t t-else="">
+                <t t-if="doc_size == 1">
+                    <br/><br/>
+                    Рік народження:
+                    <span t-esc="doc.birth"/>
+                    <t t-if="doc.death">
+                        , рік смерті:
+                        <span t-esc="doc.death"/>
+                    </t>
+                </t>
+                <t t-if="doc_last"/><t t-else="">
                     <p>--------------------------------------</p>
                 </t>
             </t>

@@ -11,7 +11,7 @@ class Book(models.Model):
     lib_num = fields.Char()
     num_item = fields.Integer(default=1,)
     num_available = fields.Integer(default=1,)
-    description = fields.Text()
+    description = fields.Text(translate=True,)
     active = fields.Boolean(default=True,)
     author_ids = fields.Many2many(
         comodel_name='new.lib.author',

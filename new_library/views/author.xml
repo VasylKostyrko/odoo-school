@@ -32,10 +32,32 @@
             <field name="name">Author of Book</field>
             <field name="type">ir.actions.act_window</field>
             <field name="res_model">new.lib.author</field>
-            <field name="view_mode">tree,form</field>
+            <field name="view_mode">tree,form, kanban</field>
         </record>
         <menuitem id="new_lib_author_menu"
                   action="new_lib_author_act_window"
                   parent="new_lib_catalog_menu"
                   name="Author" sequence="200"/>
+
+        <record id="new_lib_author_kanban_view" model="ir.ui.view">
+            <field name="name">author.kanban</field>
+            <field name="model">new.lib.author</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="first_name"/>
+                    <field name="last_name"/>
+                    <field name="color"/>
+                    <template>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click">
+                                <div class="o_kanban_cart_header_title">
+                                    <field name="first_name"/>
+                                    <field name="last_name"/>
+                                </div>
+                            </div>
+                        </t>
+                    </template>
+                </kanban>
+            </field>
+        </record>
 </odoo>
