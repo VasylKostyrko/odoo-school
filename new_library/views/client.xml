@@ -5,7 +5,8 @@
             <field name="model">new.lib.client</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="name"/>
+                    <field name="first_name"/>
+                    <field name="last_name"/>
                 </tree>
             </field>
         </record>
@@ -18,7 +19,7 @@
                     <header></header>
                     <sheet>
                         <group>
-                            <field name="name"/>
+<!--                            <field name="name"/>-->
                             <field name="first_name"/>
                             <field name="last_name"/>
                             <field name="about"/>
