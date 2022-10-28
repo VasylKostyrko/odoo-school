@@ -129,11 +129,11 @@
                             </div>
 
                             <div class="o_dropdown_kanban dropdown">
-                               <a class="dropdown-toggle btn"
+                                <a class="dropdown-toggle btn"
                                   data-toggle="dropdown" href="#">
                                    <span class="fa fa-ellipsis-v"
                                          aria-hidden="true"/>
-                               </a>
+                                </a>
                                 <div class="o_kanban_card_manage_setting row mt16">
                                     <div class="dropdown-menu" role="menu">
                                         <t t-if="widget.editable">
@@ -151,7 +151,7 @@
                                            data-field="color"/>
                                     </div>
                                 </div>
-                           </div>
+                            </div>
 
                             <div class="col-xs-12" style="height: 15px;"/>
 

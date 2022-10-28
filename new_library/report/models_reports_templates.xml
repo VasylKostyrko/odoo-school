@@ -63,6 +63,9 @@
                         <span t-esc="doc.death"/>
                     </t>
                 </t>
+                <t t-foreach="doc.book_ids" t-as="id_book">
+                    <span t-esc="id_book.name"/>
+                </t>
                 <t t-if="doc_last"/><t t-else="">
                     <p>--------------------------------------</p>
                 </t>
