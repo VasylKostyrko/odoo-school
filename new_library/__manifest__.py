@@ -16,6 +16,7 @@
         'views/menu.xml',
         'views/book.xml',
         'views/author.xml',
+        'views/client.xml',
         "report/models_reports_templates.xml",
         "report/models_report.xml",
     ],

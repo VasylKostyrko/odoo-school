@@ -10,7 +10,7 @@ class Client(models.Model):
     first_name = fields.Char()
     last_name = fields.Char()
     about = fields.Text()
-    birth = fields.Char()
+    birthday = fields.Date()
     active = fields.Boolean(default=True,)
 
     def get_full_name(self):
