@@ -8,6 +8,9 @@ class Book(models.Model):
     _description = 'Book'
     name = fields.Char()
     isbn = fields.Char()
+    publishing = fields.Char()
+    year = fields.Integer()
+    pages = fields.Integer()
     lib_num = fields.Char()
     num_item = fields.Integer(default=1,)
     num_available = fields.Integer(default=1,)
