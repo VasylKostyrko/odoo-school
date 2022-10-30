@@ -1,6 +1,6 @@
 <odoo noupdate="1">
     <!-- Модель  Author -->
-    <record id="knuth_donald_id" model="new.lib.author">
+    <record id="knuth_donald" model="new.lib.author">
         <field name="name">Кнут Д.</field>
         <field name="first_name">Дональд</field>
         <field name="last_name">Кнут</field>
@@ -10,7 +10,7 @@
             Стенфордського університету, викладач та ідеолог програмування, автор низки класичних книг з програмування.
         </field>
     </record>
-    <record id="aho_alfred_id" model="new.lib.author">
+    <record id="aho_alfred" model="new.lib.author">
         <field name="name">Ахо А.</field>
         <field name="first_name">Альфред</field>
         <field name="last_name">Ахо</field>
@@ -20,7 +20,7 @@
             Тьюрінгівський лауреат. Член НАН США, емерит-професор Колумбійського університету.
         </field>
     </record>
-    <record id="hopcroft_john_id" model="new.lib.author">
+    <record id="hopcroft_john" model="new.lib.author">
         <field name="name">Хопкрофт Дж.</field>
         <field name="first_name">Джон</field>
         <field name="last_name">Хопкрофт</field>
@@ -30,7 +30,7 @@
             Член Національної інженерної академії США та Національної академії наук США.
         </field>
     </record>
-    <record id="ullman_jeffrey_id" model="new.lib.author">
+    <record id="ullman_jeffrey" model="new.lib.author">
         <field name="name">Ульман Дж.</field>
         <field name="first_name">Джеффрі</field>
         <field name="last_name">Ульман</field>
@@ -41,7 +41,7 @@
             академії наук США.
         </field>
     </record>
-    <record id="yourdon_edward_id" model="new.lib.author">
+    <record id="yourdon_edward" model="new.lib.author">
         <field name="name">Йодан Э.</field>
         <field name="first_name">Эдвард</field>
         <field name="last_name">Йодан</field>
@@ -51,7 +51,7 @@
             Американський вчений в області теорії обчислювальних систем, видавець журналу "American Programmer".
         </field>
     </record>
-    <record id="stephen_kleene_id" model="new.lib.author">
+    <record id="stephen_kleene" model="new.lib.author">
         <field name="name">Клини С.</field>
         <field name="first_name">Стефен</field>
         <field name="last_name">Клини</field>
@@ -64,7 +64,7 @@
     </record>
 
     <!-- Модель Book -->
-    <record id="design_and_analysis_id" model="new.lib.book">
+    <record id="design_and_analysis" model="new.lib.book">
         <field name="name">Построение и анализ вычислительных алгоритмов</field>
         <field name="num_item">1</field>
         <field name="num_available">1</field>
@@ -73,10 +73,10 @@
             Розглянуто задачі перегляду, впорядкування масивів даних, множення чисел, множення матриць, алгоритми
             на графах тощо.
         </field>
-        <field name="author_ids" eval="[(6, 0, [ref('hopcroft_john_id'),
-            ref('aho_alfred_id'), ref('ullman_jeffrey_id')])]" />
+        <field name="author_ids" eval="[(6, 0, [ref('hopcroft_john'),
+            ref('aho_alfred'), ref('ullman_jeffrey')])]" />
     </record>
-    <record id="art_computer_programming_vol1_id" model="new.lib.book">
+    <record id="art_computer_programming_vol1" model="new.lib.book">
         <field name="name">Искусство программирования для ЭВМ. Том 1: Основные алгоритмы</field>
         <field name="num_item">1</field>
         <field name="num_available">1</field>
@@ -85,9 +85,9 @@
             Описано прийоми програмування та ефективного представлення в комп’ютерах інформації зі складною
             організацією.
         </field>
-        <field name="author_ids" eval="[(6, 0, [ref('knuth_donald_id')])]" />
+        <field name="author_ids" eval="[(6, 0, [ref('knuth_donald')])]" />
     </record>
-    <record id="art_computer_programming_vol2_id" model="new.lib.book">
+    <record id="art_computer_programming_vol2" model="new.lib.book">
         <field name="name">Искусство программирования для ЭВМ. Том 2: Получисленные алгоритмы</field>
         <field name="num_item">1</field>
         <field name="num_available">1</field>
@@ -95,9 +95,9 @@
             Складається з двох частин: "Випадкові числа" і "Арифметика". Наведено детальний аналіз алгоритмів генерації
             випадкових чисел. Досліджено різні аспекти проблеми обчислення поліномів, степеневих рядів та округлення чисел.
         </field>
-        <field name="author_ids" eval="[(6, 0, [ref('knuth_donald_id')])]" />
+        <field name="author_ids" eval="[(6, 0, [ref('knuth_donald')])]" />
     </record>
-    <record id="art_computer_programming_vol3_id" model="new.lib.book">
+    <record id="art_computer_programming_vol3" model="new.lib.book">
         <field name="name">Искусство программирования для ЭВМ. Том 3: Сортировка и поиск</field>
         <field name="num_item">1</field>
         <field name="num_available">1</field>
@@ -105,9 +105,9 @@
             Всестороннє досліджено поширені алгоритми внутрішнього та зовнішнього впорядкування даних, методи пошуку в таблицях на
             базі порівняння та перетворення ключів. Даються оцінки ефективності алгоритмів.
         </field>
-        <field name="author_ids" eval="[(6, 0, [ref('knuth_donald_id')])]" />
+        <field name="author_ids" eval="[(6, 0, [ref('knuth_donald')])]" />
     </record>
-    <record id="program_structure_id" model="new.lib.book">
+    <record id="program_structure" model="new.lib.book">
         <field name="name">Структурное проектирование и конструирование программ</field>
         <field name="num_item">1</field>
         <field name="num_available">1</field>
@@ -115,17 +115,17 @@
             На сучасному рівні викладено принципи і методи структурного програмування, які дозволяють створювати
             надійно функціонуючі і добре документовані програми.
         </field>
-        <field name="author_ids" eval="[(6, 0, [ref('yourdon_edward_id')])]" />
+        <field name="author_ids" eval="[(6, 0, [ref('yourdon_edward')])]" />
     </record>
 
     <!-- Модель Client -->
-    <record id="knuth_donald_id" model="new.lib.client">
+    <record id="anna_koshenko" model="new.lib.client">
         <field name="first_name">Анна</field>
         <field name="last_name">Кошенко</field>
         <field name="birthday">12.05.2000</field>
         <field name="about">Староста</field>
     </record>
-    <record id="knuth_donald_id" model="new.lib.client">
+    <record id="maxym_abrahamovych" model="new.lib.client">
         <field name="first_name">Максим</field>
         <field name="last_name">Абрагамович</field>
         <field name="birthday">20.12.2000</field>
