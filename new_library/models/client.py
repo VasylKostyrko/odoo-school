@@ -6,7 +6,6 @@ _logger = logging.getLogger(__name__)
 class Client(models.Model):
     _name = 'new.lib.client'
     _description = 'Client'
-    # name = fields.Char()
     first_name = fields.Char()
     last_name = fields.Char()
     about = fields.Text()

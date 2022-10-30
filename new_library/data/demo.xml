@@ -6,8 +6,8 @@
         <field name="last_name">Кнут</field>
         <field name="birth">1938</field>
         <field name="about">
-Американський вчений в області інформатики. Доктор философії, емерит-професор
-Стенфордського університету, викладач та ідеолог програмування, автор низки класичних книг з програмування.
+            Американський вчений в області інформатики. Доктор философії, емерит-професор
+            Стенфордського університету, викладач та ідеолог програмування, автор низки класичних книг з програмування.
         </field>
     </record>
     <record id="aho_alfred_id" model="new.lib.author">
@@ -16,8 +16,8 @@
         <field name="last_name">Ахо</field>
         <field name="birth">1941</field>
         <field name="about">
-Канадський вчений-інформатик, вніс помітний вклад в теорію та практику компіляції мов програмування.
-Тьюрінгівський лауреат. Член НАН США, емерит-професор Колумбійського університету.
+            Канадський вчений-інформатик, вніс помітний вклад в теорію та практику компіляції мов програмування.
+            Тьюрінгівський лауреат. Член НАН США, емерит-професор Колумбійського університету.
         </field>
     </record>
     <record id="hopcroft_john_id" model="new.lib.author">
@@ -26,19 +26,19 @@
         <field name="last_name">Хопкрофт</field>
         <field name="birth">1939</field>
         <field name="about">
-Американський вчений в області теорії обчислювальних систем, лауреат премії Тьюрінга.
-Член Національної інженерної академії США та Національної академії наук США.
+            Американський вчений в області теорії обчислювальних систем, лауреат премії Тьюрінга.
+            Член Національної інженерної академії США та Національної академії наук США.
         </field>
     </record>
     <record id="ullman_jeffrey_id" model="new.lib.author">
         <field name="name">Ульман Дж.</field>
-        <field name="first_name">Джеффри</field>
+        <field name="first_name">Джеффрі</field>
         <field name="last_name">Ульман</field>
         <field name="birth">1942</field>
         <field name="about">
-Дослідник в галузі інформаційних технологій. Його підручники з компіляторів, теорії обчислень та баз даних
-вважаються стандартом у відповідних дисциплінах. Член Національної інженерної академії США та Національної
-академії наук США.
+            Дослідник в галузі інформаційних технологій. Його підручники з компіляторів, теорії обчислень та баз даних
+            вважаються стандартом у відповідних дисциплінах. Член Національної інженерної академії США та Національної
+            академії наук США.
         </field>
     </record>
     <record id="yourdon_edward_id" model="new.lib.author">
@@ -48,7 +48,18 @@
         <field name="birth">1944</field>
         <field name="death">2016</field>
         <field name="about">
-Американський вчений в області теорії обчислювальних систем, видавець журналу "American Programmer".
+            Американський вчений в області теорії обчислювальних систем, видавець журналу "American Programmer".
+        </field>
+    </record>
+    <record id="stephen_kleene_id" model="new.lib.author">
+        <field name="name">Клини С.</field>
+        <field name="first_name">Стефен</field>
+        <field name="last_name">Клини</field>
+        <field name="birth">1909</field>
+        <field name="death">1994</field>
+        <field name="about">
+            Американський математик і логік. Один з творців теорії обчислювальності. Винайшов регулярні вирази.Його іменем
+            названі алгебра Кліні, теорема Кліні про рекурсію, теорема Кліні про нерухому точку тощо.
         </field>
     </record>
 
@@ -56,30 +67,68 @@
     <record id="design_and_analysis_id" model="new.lib.book">
         <field name="name">Построение и анализ вычислительных алгоритмов</field>
         <field name="num_item">1</field>
+        <field name="num_available">1</field>
         <field name="description">
-В монографії наводяться результати досліджень з побудови швидких алгоритмів або доведення їх відсутності.
-Розглянуто задачі перегляду, впорядкування масивів даних, множення чисел, множення матриць, алгоритми
-на графах тощо.
+            В монографії наводяться результати досліджень з побудови швидких алгоритмів або доведення їх відсутності.
+            Розглянуто задачі перегляду, впорядкування масивів даних, множення чисел, множення матриць, алгоритми
+            на графах тощо.
         </field>
-<!--        <field name="author_ids" ref="new_library.hopcroft_john_id"/>-->
+        <field name="author_ids" eval="[(6, 0, [ref('hopcroft_john_id'),
+            ref('aho_alfred_id'), ref('ullman_jeffrey_id')])]" />
     </record>
-    <record id="art_computer_programming_id" model="new.lib.book">
-        <field name="name">Искусство программирования для ЭВМ</field>
+    <record id="art_computer_programming_vol1_id" model="new.lib.book">
+        <field name="name">Искусство программирования для ЭВМ. Том 1: Основные алгоритмы</field>
         <field name="num_item">1</field>
+        <field name="num_available">1</field>
         <field name="description">
-Введено поняття алгоритму та обчислювального процесу. Наведено численні факти з дискретної математики.
-Описано прийоми програмування та ефективного в комп’ютерах представлення інформації зі складною
-організацією.
+            Введено поняття алгоритму та обчислювального процесу. Наведено численні факти з дискретної математики.
+            Описано прийоми програмування та ефективного представлення в комп’ютерах інформації зі складною
+            організацією.
         </field>
-<!--        <field name="author_ids" ref="new_library.knuth_donald_id"/>-->
+        <field name="author_ids" eval="[(6, 0, [ref('knuth_donald_id')])]" />
+    </record>
+    <record id="art_computer_programming_vol2_id" model="new.lib.book">
+        <field name="name">Искусство программирования для ЭВМ. Том 2: Получисленные алгоритмы</field>
+        <field name="num_item">1</field>
+        <field name="num_available">1</field>
+        <field name="description">
+            Складається з двох частин: "Випадкові числа" і "Арифметика". Наведено детальний аналіз алгоритмів генерації
+            випадкових чисел. Досліджено різні аспекти проблеми обчислення поліномів, степеневих рядів та округлення чисел.
+        </field>
+        <field name="author_ids" eval="[(6, 0, [ref('knuth_donald_id')])]" />
+    </record>
+    <record id="art_computer_programming_vol3_id" model="new.lib.book">
+        <field name="name">Искусство программирования для ЭВМ. Том 3: Сортировка и поиск</field>
+        <field name="num_item">1</field>
+        <field name="num_available">1</field>
+        <field name="description">
+            Всестороннє досліджено поширені алгоритми внутрішнього та зовнішнього впорядкування даних, методи пошуку в таблицях на
+            базі порівняння та перетворення ключів. Даються оцінки ефективності алгоритмів.
+        </field>
+        <field name="author_ids" eval="[(6, 0, [ref('knuth_donald_id')])]" />
     </record>
     <record id="program_structure_id" model="new.lib.book">
         <field name="name">Структурное проектирование и конструирование программ</field>
         <field name="num_item">1</field>
+        <field name="num_available">1</field>
         <field name="description">
-На сучасному рівні викладено принципи і методи структурного програмування, які дозволяють створювати
-надійно функціонуючі і добре документовані програми.
+            На сучасному рівні викладено принципи і методи структурного програмування, які дозволяють створювати
+            надійно функціонуючі і добре документовані програми.
         </field>
-<!--        <field name="author_ids" ref="new_library.yourdon_edward_id"/>-->
+        <field name="author_ids" eval="[(6, 0, [ref('yourdon_edward_id')])]" />
+    </record>
+
+    <!-- Модель Client -->
+    <record id="knuth_donald_id" model="new.lib.client">
+        <field name="first_name">Анна</field>
+        <field name="last_name">Кошенко</field>
+        <field name="birthday">12.05.2000</field>
+        <field name="about">Староста</field>
+    </record>
+    <record id="knuth_donald_id" model="new.lib.client">
+        <field name="first_name">Максим</field>
+        <field name="last_name">Абрагамович</field>
+        <field name="birthday">20.12.2000</field>
+        <field name="about">Середній студент</field>
     </record>
 </odoo>

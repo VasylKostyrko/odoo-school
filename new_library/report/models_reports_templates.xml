@@ -64,11 +64,12 @@
                     </t>
 
                     <t t-if="doc.book_ids"/><t t-else="">
-                        <br/>
+                        <br/><br/>
                         В бібліотеці немає книг цього автора.
                     </t>
                     <t t-foreach="doc.book_ids" t-as="id_book">
                         <t t-if="id_book_index == 0">
+                            <br/><br/>
                             В бібліотеці є книги автора (<span t-esc="id_book_size"/>):
                             <br/><br/>
                         </t>
@@ -76,9 +77,9 @@
                             <li><span t-esc="id_book.name"/></li>
                         </ul>
                     </t>
-                    <t t-if="doc_last"/><t t-else="">
-                        <p>--------------------------------------</p>
-                    </t>
+                </t>
+                <t t-if="doc_last"/><t t-else="">
+                    <p>--------------------------------------</p>
                 </t>
             </t>
         </t>
