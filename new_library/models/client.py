@@ -10,6 +10,7 @@ class Client(models.Model):
     last_name = fields.Char()
     about = fields.Text()
     birthday = fields.Date()
+    borrow_ids = fields.One2many('new.lib.borrow.book', 'client_id', string='Borrow Docs')
     active = fields.Boolean(default=True,)
 
     def get_full_name(self):

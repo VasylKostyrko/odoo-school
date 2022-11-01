@@ -19,7 +19,6 @@
                     <header></header>
                     <sheet>
                         <group>
-<!--                            <field name="name"/>-->
                             <field name="first_name"/>
                             <field name="last_name"/>
                             <field name="about"/>

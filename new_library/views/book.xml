@@ -6,7 +6,7 @@
         <field name="arch" type="xml">
             <tree>
                 <field name="name"/>
-<!--                <field name="num_available"/>-->
+                <field name="num_available"/>
             </tree>
         </field>
     </record>
@@ -42,6 +42,6 @@
     <menuitem id="new_lib_book_menu"
            action="new_lib_book_act_window"
            parent="new_lib_catalog_menu"
-           name="Book" sequence="250"/>
+           name="Books" sequence="250"/>
 </odoo>
 

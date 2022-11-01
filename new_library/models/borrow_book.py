@@ -7,9 +7,9 @@ class BorrowBook(models.Model):
     _name = 'new.lib.borrow.book'
     _description = 'Borrow Book'
     date = fields.Date()
-    client_id = fields.Many2one(
-        comodel_name='new.lib.client',
-        ondelete='cascade',)
+    client_id = fields.Many2one('new.lib.client', string="Client")
+    # comodel_name='new.lib.client',
+    # ondelete='cascade',)
     book_ids = fields.Many2many(
         comodel_name='new.lib.book',
         ondelete='cascade', )

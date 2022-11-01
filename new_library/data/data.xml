@@ -122,13 +122,13 @@
     <record id="anna_koshenko" model="new.lib.client">
         <field name="first_name">Анна</field>
         <field name="last_name">Кошенко</field>
-        <field name="birthday">12.05.2000</field>
+        <field name="birthday">2000-05-12</field>
         <field name="about">Староста</field>
     </record>
     <record id="maxym_abrahamovych" model="new.lib.client">
         <field name="first_name">Максим</field>
         <field name="last_name">Абрагамович</field>
-        <field name="birthday">20.12.2000</field>
+        <field name="birthday">2000-12-20</field>
         <field name="about">Середній студент</field>
     </record>
 </odoo>
