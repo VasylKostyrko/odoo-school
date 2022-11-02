@@ -120,12 +120,14 @@
 
     <!-- Модель Client -->
     <record id="anna_koshenko" model="new.lib.client">
+        <field name="name">Анна Кошенко</field>
         <field name="first_name">Анна</field>
         <field name="last_name">Кошенко</field>
         <field name="birthday">2000-05-12</field>
         <field name="about">Староста</field>
     </record>
     <record id="maxym_abrahamovych" model="new.lib.client">
+        <field name="name">Максим Абрагамович</field>
         <field name="first_name">Максим</field>
         <field name="last_name">Абрагамович</field>
         <field name="birthday">2000-12-20</field>

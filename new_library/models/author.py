@@ -6,6 +6,8 @@ _logger = logging.getLogger(__name__)
 class Author(models.Model):
     _name = 'new.lib.author'
     _description = 'Author'
+    _order = 'name'
+
     name = fields.Char(translate=True,)
     first_name = fields.Char()
     last_name = fields.Char()
