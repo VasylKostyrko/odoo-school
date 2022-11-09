@@ -1,0 +1,38 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<odoo>
+        <record id="new_lib_publisher_tree" model="ir.ui.view">
+            <field name="name">new.lib.publisher.tree ()</field>
+            <field name="model">new.lib.publisher</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        <record id="new_lib_publisher_form" model="ir.ui.view">
+            <field name="name">new.lib.publisher.form ()</field>
+            <field name="model">new.lib.publisher</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header></header>
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="city"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="new_lib_publisher_act_window" model="ir.actions.act_window">
+            <field name="name">Publisher</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">new.lib.publisher</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+        <menuitem id="new_lib_publisher_menu"
+                  action="new_lib_publisher_act_window"
+                  parent="new_lib_catalog_menu"
+                  name="Publisher" sequence="300"/>
+
+</odoo>

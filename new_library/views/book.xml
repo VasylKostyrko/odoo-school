@@ -15,19 +15,26 @@
         <field name="model">new.lib.book</field>
         <field name="arch" type="xml">
             <form>
+                <button name="make_available" string="Make Available" type="object"/>
+                <button name="make_borrowed" string="Make Borrowed" type="object"/>
+                <button name="make_lost" string="Make Lost" type="object"/>
+
                 <header></header>
                 <sheet>
                     <group>
                         <field name="name"/>
                         <field name="isbn"/>
 <!--                        <field name="publishing"/>-->
-<!--                        <field name="year"/>-->
-<!--                        <field name="pages"/>-->
+                        <field name="year"/>
+                        <field name="age"/>
+                        <field name="pages"/>
                         <field name="lib_num"/>
                         <field name="num_item"/>
                         <field name="num_available"/>
+                        <field name="cost"/>
                         <field name="description"/>
                         <field name="author_ids" widget="many2many_tags"/>
+                        <field name="state" widget="statusbar"/>
                     </group>
                 </sheet>
             </form>

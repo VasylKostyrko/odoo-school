@@ -17,6 +17,7 @@
         'views/book.xml',
         'views/author.xml',
         'views/client.xml',
+        'views/publisher.xml',
         'views/borrow_book.xml',
         "report/models_reports_templates.xml",
         "report/models_report.xml",

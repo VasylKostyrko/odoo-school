@@ -8,7 +8,7 @@ class Author(models.Model):
     _description = 'Author'
     _order = 'name'
 
-    name = fields.Char(translate=True,)
+    name = fields.Char(required=True)
     first_name = fields.Char()
     last_name = fields.Char()
     about = fields.Text(translate=True,)
