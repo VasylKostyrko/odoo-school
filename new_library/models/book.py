@@ -1,6 +1,8 @@
 import logging
 from odoo import api, models, fields
 from odoo.exceptions import ValidationError
+from odoo.exceptions import UserError
+from odoo.tools.translate import _
 
 _logger = logging.getLogger(__name__)
 
@@ -72,7 +74,8 @@ class Book(models.Model):
             if book.is_allowed_transition(book.state, new_state):
                 book.state = new_state
             else:
-                continue
+                msg = _('Moving from %s to %s is not allowed') % (book.state, new_state)
+                raise UserError(msg)
 
     def make_available(self):
         self.change_state('available')
@@ -82,5 +85,14 @@ class Book(models.Model):
 
     def make_lost(self):
         self.change_state('lost')
+
+    # def log_all_library_members(self):
+    #     library_member_model = self.env['new.lib.client']
+    #     all_members = library_member_model.search([])
+    #     print("ALL MEMBERS:")
+    #     for member in all_members:
+    #         print(member.name)
+    #     return True
+
 
 
