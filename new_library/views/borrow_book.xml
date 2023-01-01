@@ -1,0 +1,41 @@
+<odoo>
+     <record id="new_lib_borrow_book_tree" model="ir.ui.view">
+        <field name="name">new.lib.borrow.book.tree ()</field>
+        <field name="model">new.lib.borrow.book</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="date"/>
+                <field name="client_id"/>
+<!--                 widget="many2one_avatar_user" -->
+            </tree>
+        </field>
+     </record>
+     <record id="new_lib_borrow_book_form" model="ir.ui.view">
+        <field name="name">new.lib.borrow.book.form ()</field>
+        <field name="model">new.lib.borrow.book</field>
+        <field name="arch" type="xml">
+            <form>
+                <header></header>
+                <sheet>
+                    <group>
+                        <field name="date"/>
+                        <field name="client_id" />
+<!--                        widget="many2one_avatar_user"-->
+                        <field name="book_ids" widget="many2many_tags"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+     </record>
+     <record id="new_lib_borrow_book_act_window" model="ir.actions.act_window">
+        <field name="name">Borrow Books</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">new.lib.borrow.book</field>
+        <field name="view_mode">tree,form</field>
+     </record>
+     <menuitem id="new_lib_borrow_book_menu"
+        action="new_lib_borrow_book_act_window"
+        parent="new_lib_document_menu"
+        name="Borrow Books" sequence="100"/>
+
+</odoo>

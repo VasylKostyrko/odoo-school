@@ -1,0 +1,48 @@
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<odoo>
+    <record id="new_lib_book_category_tree" model="ir.ui.view">
+        <field name="name">new.lib.book.category.tree ()</field>
+        <field name="model">new.lib.book.category</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="parent_id"/>
+            </tree>
+        </field>
+    </record>
+    <record id="new_lib_book_category_form" model="ir.ui.view">
+        <field name="name">new.lib.book.category.form ()</field>
+        <field name="model">new.lib.book.category</field>
+        <field name="arch" type="xml">
+            <form>
+                <header></header>
+                <sheet>
+                    <button name="create_categories" string="Create Categories" type="object"/>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="description"/>
+                        </group>
+                        <group>
+                            <field name="parent_id"/>
+                        </group>
+                    </group>
+                    <group>
+                        <field name="child_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="new_lib_book_category_act_window" model="ir.actions.act_window">
+        <field name="name">Book Category</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">new.lib.book.category</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="new_lib_book_category_menu"
+           action="new_lib_book_category_act_window"
+           parent="new_lib_catalog_menu"
+           name="Book Categories" sequence="240"/>
+
+</odoo>
