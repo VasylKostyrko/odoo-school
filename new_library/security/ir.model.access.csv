@@ -4,3 +4,4 @@ new_library.access_new_lib_author,access_new_lib_author,new_library.model_new_li
 new_library.access_new_lib_client,access_new_lib_client,new_library.model_new_lib_client,base.group_user,1,1,1,1
 new_library.access_new_lib_borrow_book,access_new_lib_borrow_book,new_library.model_new_lib_borrow_book,base.group_user,1,1,1,1
 new_library.access_new_lib_return_book,access_new_lib_return_book,new_library.model_new_lib_return_book,base.group_user,1,1,1,1
+new_library.access_new_lib_book_category,access_new_lib_book_category,new_library.model_new_lib_book_category,base.group_user,1,1,1,1

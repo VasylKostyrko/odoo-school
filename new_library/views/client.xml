@@ -38,7 +38,7 @@
         <menuitem id="new_lib_client_menu"
                   action="new_lib_client_act_window"
                   parent="new_lib_catalog_menu"
-                  name="Client" sequence="240" />
+                  name="Client" sequence="260" />
 
 <!--        <record id="new_lib_author_kanban_view" model="ir.ui.view">-->
 <!--            <field name="name">author.kanban</field>-->

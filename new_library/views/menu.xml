@@ -6,6 +6,9 @@
   <menuitem id="new_lib_catalog_menu"
            parent="new_lib_main_menu"
            name="Catalog" sequence="100"/>
+  <menuitem id="new_lib_document_menu"
+           parent="new_lib_main_menu"
+           name="Document" sequence="200"/>
   <menuitem id="new_lib_settings_main_menu"
          parent="new_lib_main_menu"
          name="Settings" sequence="400"/>

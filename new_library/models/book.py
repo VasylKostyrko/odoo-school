@@ -94,5 +94,13 @@ class Book(models.Model):
     #         print(member.name)
     #     return True
 
+    def find_book(self):
+        domain = [
+           ('state', 'ilike', 'Available'),
+        ]
+        books = self.search(domain)
+        for book in books:
+            print(book.name)
+        return True
 
 

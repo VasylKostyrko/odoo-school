@@ -1,10 +1,8 @@
 {
     "name": "New Library",
-    "summary": "Learning Odoo Reports",
-
-    "author": "Vasyl Kostyrko",
+    "summary": "Learning Odoo Community",
+    "author": "Vladyslav Rechleckyj",
     'website': "https://letu.lviv.ua",
-
     "category": "Education",
     "version": "15.0.1.0.0",
     "license": "OPL-1",
@@ -14,6 +12,7 @@
     "data": [
         "security/ir.model.access.csv",
         'views/menu.xml',
+        'views/book_category.xml',
         'views/book.xml',
         'views/author.xml',
         'views/client.xml',
